@@ -8,6 +8,18 @@ logger.setLevel(logging.INFO)
 
 def lambda_handler(event, context):
     
+    """
+    Sample for JSON Input for n8n call:
+    
+    {
+      "backblaze_key_id": "BACKBLAZEAPPKEY",
+      "backblaze_key": "BACKBLAZESECRETKEY",
+      "backblaze_endpoint": "s3.REGION.backblazeb2.com",
+      "dest_bucket": "BACKBLAZEBUCKET",
+      "exclude_buckets": ["temp-bucket", "logs"]
+    }
+    """
+    
     # Extract parameters from the event
     backblaze_key_id = event.get('backblaze_key_id')
     backblaze_key = event.get('backblaze_key')
