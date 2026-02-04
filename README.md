@@ -2,6 +2,10 @@
 
 Scripts for Lambda actions to be called by n8n
 
+<!-- buttons -->
+
+<!-- endbuttons -->
+
 # Configuration
 
 * Runtime: Python 3.13+
